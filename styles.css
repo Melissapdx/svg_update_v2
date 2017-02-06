@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: url('svgs/background.svg') #edeff0;
+  background-size: 53px 50px;
+}
+
+
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+  }
+  a:hover {
+    color: #111;
+  }
+
+header {
+  padding-top: 10px;
+}
+  header nav {
+    padding-bottom: 50px;
+    text-align: left;
+  }
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  header h1 {
+    line-height: 1em;
+  }
+
+main {
+  padding-top: 50px;
+}
+  main h2 {
+  font-size: 28px;
+}
+  main ul {
+    padding: 0;
+  }
+    main li {
+      display: inline-block;
+      color: #ba8058;
+}
+      main li img {
+        margin-bottom: 15px;
+      }
+      main li span {
+        margin-left: -40px;
+      }
+      main li:last-child {
+        margin-right: 0;
+      }
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+/*SVG Styles*/
+.heart,.visit{
+  width:24px;
+  height:28px;
+}
+.contact{
+  width:24px;
+  height:24px;
+}
+.heart:hover .st0_heart,.visit:hover .st0_visit,.contact:hover .st0_contact{
+  fill:#000;
+
+}
+.st0_heart,.st0_visit,.st0_contact{
+  transition: .5s all;
+}
+.logo{
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.logo:hover .st2_logo, .logo:hover .st1_logo{
+  fill: #BA8058;
+}
+.logo:hover .st0_logo{
+  fill: #F4C6A6;
+}
+.st0_logo,.st1_logo,.st2_logo{
+  transition: .5s all;
+}
+
+
+.corgi_red,
+.corgi_fawn,
+.corgi_sable,
+.corgi_blacktan{
+  width:170px;
+  height:170px;
+}
+/*Media Queries*/
+@media(min-width: 420px){
+
+  .pawprint{
+  visibility: hidden;
+  }
+}
+
+@media(max-width: 420px){
+  
+  .st1_logo{
+    visibility:hidden;
+  }
+}
+/* Tested in Chrome,Firefox,Windows 10,Safari 10, Safari IOS all devices*/
