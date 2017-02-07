@@ -81,26 +81,29 @@ footer {
 /*SVG Styles*/
 .heart,.visit{
   width:24px;
-  height:28px;
-}
-.contact{
-  width:24px;
   height:24px;
 }
-.heart:hover .st0_heart,.visit:hover .st0_visit,.contact:hover .st0_contact{
-  fill:#000;
-
+.contact{
+  width:28px;
+  height:24px;
 }
-.st0_heart,.st0_visit,.st0_contact{
+nav a:hover path{
+  fill:#000;
+}
+
+nav a,
+nav a path{
   transition: .5s all;
 }
-.logo{
-  display: block;
-  width: 30%;
+
+  .logo{
+  width:140px;
+  height:120px;
   margin: 0 auto;
 }
 
-.logo:hover .st2_logo, .logo:hover .st1_logo{
+.logo:hover .st2_logo,
+ .logo:hover .st1_logo{
   fill: #BA8058;
 }
 .logo:hover .st0_logo{
